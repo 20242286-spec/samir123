@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Viñeta Cómics · Cotizador de pedido</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <header>
+        <h1>Viñeta Cómics</h1>
+    </header>
+
+    <main>
+        <section class="cotizador">
+            <h2>Cotizador de pedido</h2>
+
+            <label for="precio">Precio del cómic (S/)</label>
+            <input type="number" id="precio" min="0" step="0.01" placeholder="35.00">
+
+            <label for="cantidad">Cantidad de ejemplares</label>
+            <input type="number" id="cantidad" min="1" step="1" placeholder="1">
+
+            <label for="envio">Tipo de entrega</label>
+            <select id="envio">
+                <option value="0">Recojo en tienda (S/ 0.00)</option>
+                <option value="10">Envío a Lima (S/ 10.00)</option>
+                <option value="18">Envío a provincias (S/ 18.00)</option>
+            </select>
+
+            <button type="button" id="btnCotizar">Cotizar pedido</button>
+
+            <div id="resultado" class="resultado">
+                Complete los datos y presione «Cotizar pedido».
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
